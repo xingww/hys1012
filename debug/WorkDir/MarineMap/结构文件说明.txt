@@ -1,0 +1,57 @@
+BEGIN
+< // Layer 1 definition:
+LAYER NAME: (layer's name)  
+ATTRIBUTES // layer's Attributes' definition keyword
+ < // Attribute 1 definition:
+  ATTR NAME: (attribute's name)
+  DATA TYPE: (attribute's data type, there are 4 basic types as : BOOL, INT, FLOAT, STRING)
+ >
+ < // Attribute 2 definition:
+  ATTR NAME: (attribute's name)
+  DATA TYPE: (attribute's data type, there are 4 basic types as : BOOL, INT, FLOAT, STRING)
+ >
+ // ...  More attributes 
+GEO TYPE: (layer's geo type, there are 4 basic geo types as: POINT, LINE, REGION )
+GEO STYLE    // layer's geo style's definition keyword
+ <
+ BASIC STYLE: SOLID, 100, RGB(0,100,24)            //basic line style format as "BASIC_STYLE_TYPE(SOLID or DOT or DASH), LINE_WIDTH(unit is Himeter), LINE_COLOR"
+ CYCLE SYMBOL STYLE: 1, 1000                       //cycle symbol line style format as "SYMBOL_ID, CYCLE_LENTH(unit by Himeter)"
+ >
+>
+<
+LAYER NAME: My Point
+ATTRIBUTES
+ <
+  ATTR NAME: attr a
+  DATA TYPE: STRING
+ >
+ <
+  ATTR NAME: attr b
+  DATA TYPE: BOOL
+ >
+GEO TYPE: POINT
+GEO STYLE
+ < 
+ SYMBOL STYLE: 1                                   //symbol point style format as "SYMBOL_ID"
+ TEXT STYLE: "Arial", 20, RGB(100, 200, 100),"@0"  //text point style format as " FONT_NAME, FONT_SIZE, FONT_COLOR, TEXT_FORMAT_STRING( "@n" : take field n as text) "
+ >
+> 
+<
+LAYER NAME: My Region
+ATTRIBUTES
+ <
+  ATTR NAME: attr a
+  DATA TYPE: I
+ >
+ <
+  ATTR NAME: attr b
+  DATA TYPE: F
+ >
+GEO TYPE: REGION
+GEO STYLE
+ < 
+ BASIC STYLE: RGB(200,100,300),100                //basic region style format as "FILL_COLOR, TRANSPARENCY(0~100)"
+ PATTERN SYMBOL STYLE: 1, 200, 100                //pattern region style format as "SYMBOL_ID, SYMBOL_CYCLE_WIDTH, SYMBOL_CYCLE_HEIGHT"
+ >
+> 
+END

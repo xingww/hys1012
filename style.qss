@@ -1,0 +1,131 @@
+﻿QPushButton#btnReset, QPushButton#btnSearch, QPushButton#btnRefresh, QPushButton#btnCreate  {
+    color: #EBECFB;
+	min-width: 72px;
+	border-radius: 3px;
+}
+
+QPushButton:hover {
+	color: #398af1;
+}
+
+QMenu {
+    color: #333333;
+    background-color: white;
+	border-color: #F2F2F2;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+}
+
+QMenu::item:selected {
+    background-color: #398af1;
+	color: white;
+}
+
+QPushButton#btnSave, QPushButton#btnModified {
+    color: #398af1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #F2F2F2;
+	min-width: 72px;
+	border-radius: 3px;
+}
+
+QPushButton#btnSave:hover, QPushButton#btnModified:hover {
+    color: #398af1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #398af1;
+	min-width: 72px;
+	border-radius: 3px;
+}
+
+QPushButton#btnCancel, QPushButton#btnTest {
+    color: #666666;
+	min-width: 72px;
+	border-radius: 3px;
+}
+
+QPushButton#btnCancel:hover, QPushButton#btnTest:hover {
+    color: #000000;
+	min-width: 72px;
+	border-radius: 3px;
+}
+
+QLabel {
+    color:#EBECFB;
+    border-image: none;
+}
+
+QLineEdit {
+    border-radius: 3px;
+	color: #FFFFFF;
+}
+
+QComboBox {
+    border-style: solid;
+    border-color: #4163EF4D;
+    border-width: 1px;
+}
+
+QTableView, QTreeWidget, QTextBrowser#txtComment {
+   border: none;
+}
+
+QTableView::item {
+    selection-color:#FFFFFF;
+    selection-background-color: #00008B;
+}
+
+QTableView QHeaderView::section, QTableView QTableCornerButton::section, QTreeWidget QHeaderView::section {
+    background-color:#191970;
+	font: bold 9pt;
+}
+
+QTabWidget::pane {
+    border-right:none;
+}
+
+QComboBox::drop-down {
+    background-color: #4169E1;
+}
+QComboBox::down-arrow {
+	image: url(:/destop/down.png);
+	width: 8px;
+	height:8px;
+}
+
+QComboBox {
+    border-radius: 3px;
+}
+
+QSlider::groove:horizontal {
+    background:#0098FF;
+	height: 5px;
+	border-radius: 1px;
+}
+QSlider::handle:horizontal {
+    height: 12px;
+	width: 12px;
+	margin: -10px 0;
+    image: url(:/destop/circle.png);
+}
+QSlider::sub-page:horizontal {
+    background:#0098FF;
+}
+QSlider::add-page:horizontal {
+    background:#FFFFFF;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    background-color: #4169E1; 
+}
+
+QSpinBox::up-arrow {
+    image: url(:/destop/up.png);
+	height: 5px;
+}
+QSpinBox::down-arrow {
+    image: url(:/destop/down.png);
+	height: 5px;
+}

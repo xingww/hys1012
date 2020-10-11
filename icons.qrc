@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/destop">
+        <file>icons/check.ico</file>
+        <file alias="close.png">icons/close.png</file>
+        <file alias="minux.png">icons/minus.png</file>
+        <file alias="max.png">icons/window-maximize.png</file>
+        <file alias="restore.png">icons/window-restore.png</file>
+        <file alias="app.png">icons/715.png</file>
+        <file alias="start.png">icons/start.png</file>
+        <file alias="setting.png">icons/setting.png</file>
+        <file alias="pause.png">icons/pause.png</file>
+        <file alias="background.png">icons/backgroud.png</file>
+        <file alias="dia_bg.png">icons/dia_bg.png</file>
+        <file alias="down.png">icons/down.png</file>
+        <file alias="circle.png">icons/circle.png</file>
+        <file alias="stop.png">icons/restore.png</file>
+        <file alias="up.png">icons/up.png</file>
+        <file>icons/Fastbackward.png</file>
+        <file>icons/Fastforward.png</file>
+        <file>icons/X2.png</file>
+        <file>icons/X4.png</file>
+        <file>icons/X8.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>style.qss</file>
+    </qresource>
+</RCC>
